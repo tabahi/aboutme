@@ -85,6 +85,66 @@
         }
       }
 
+		.skills-intro {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #4a90e2;
+        }
+        .skill-categories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .skill-category {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .skill-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .skill-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+        .experience-section {
+            margin-top: 30px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+        .experience-item strong {
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .skill-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+
     </style>
   </head>
   <body>
@@ -96,10 +156,65 @@
         </div>
         <div class="page-body">
           <div class="about">
-            Speech & audio researcher at Bournemouth University. I build tools for speech processing and audio analysis in Python and JavaScript. When not doing research, I tinker with hardware. Love working on DIY electronics in my garage. Currently exploring ways to make speech AI more accessible. Always excited to collaborate on linguistics, audio processing, or open-source projects! Looking to connect with linguists and audio enthusiasts. 🎵 🔊
+        <p>Recent PhD from Bournemouth University (Nov 2025). My background spans signal processing and automation. I tend to work across the full stack—from developing AI models to designing and building hardware prototypes. This comes from years of working on projects where I needed to handle both the algorithms and the physical implementation.</p>
+    </div>
 
-          </div>
+    <div class="skills-intro">
+        I'm looking for opportunities in both Speech AI/LLMs and electronics/embedded systems. While these might seem like different fields, they're both areas I've worked in extensively and enjoy working on.
+    </div>
 
+    <div class="skill-categories">
+        <div class="skill-category">
+            <h3>🎙️ AI & Speech Processing</h3>
+            <ul class="skill-list">
+                <li>Speech synthesis (TTS): parallel and autoregressive models, style adaptation</li>
+                <li>LLMs and conversational AI systems</li>
+                <li>Audio signal processing and analysis</li>
+                <li>Mid-scale (1B) Model training and deployment</li>
+                <li>Contributing to open-source speech tools</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>🔧 Electronics & Hardware</h3>
+            <ul class="skill-list">
+                <li>Embedded programming: C++ for microcontrollers, ROS</li>
+                <li>CAD and mechanical design, 3D printing</li>
+                <li>RF systems and wireless communications</li>
+                <li>Sensor integration (range, ultrasonic, seismic, environmental)</li>
+                <li>Prototyping from circuit design to enclosure</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-section">
+        <h3>Experience</h3>
+        
+        <div class="experience-item">
+            <strong>2021-2025: PhD Research (EPSRC-funded)</strong><br>
+            Worked on TTS systems (parallel and autoregressive) and style adaptation techniques as part of my thesis. Also developed virtual assistant chatbots for health diagnostics.
+        </div>
+
+        <div class="experience-item">
+            <strong>2019-2020: IoT Startup, Wuhan</strong><br>
+            Small predictive IoT company working on embedded systems (ended during COVID-19).
+        </div>
+
+        <div class="experience-item">
+            <strong>2015-2017: Comcept Limited</strong><br>
+            Worked on sensors and automation for telecom and defense contracts. Projects included fully-automatic tank autoloaders, precision weather sensors, range sensors, RF detectors/jammers, and ultrasound/seismic sensors.
+        </div>
+
+        <div class="experience-item">
+            <strong>Freelance Projects</strong><br>
+            Over the years, I've built prototypes for industrial experiments and custom gadgets for theater productions. Usually handling everything from programming to nuts and bolts. Open to RF-related projects.
+        </div>
+
+        <div class="experience-item">
+            <strong>Open Source</strong><br>
+            Contributed to Arduino libraries, 3D printing resources, and speech processing tools.
+        </div>
+    </div>
 
          <div class="linkage">
 		<small>Contact: radial-ninja-murky@duck.com</small>
@@ -110,9 +225,13 @@
               <div class="icon"></div>
               <div class="label">Github</div>
             </a>
-            <a href="https://scholar.google.com/citations?user=an-r6g0AAAAJ" class="link-item">
+            <a href="https://scholar.google.com/citations?user=qoa95hoAAAAJ&hl=en" class="link-item">
               <div class="icon"></div>
               <div class="label">Scholar</div>
+            </a>
+            <a href="https://www.thingiverse.com/tabahi/designs" class="link-item">
+              <div class="icon"></div>
+              <div class="label">Thingiverse</div>
             </a>
             <a href="https://www.linkedin.com/in/arehmanbournemouth/" class="link-item">
               <div class="icon"></div>
